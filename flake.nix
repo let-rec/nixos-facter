@@ -16,7 +16,7 @@
         system = "x86_64-linux";
         modules = [
           disko.nixosModules.disko
-          ./disko.nix
+          ./cooked/disko.nix
 
           # nixos-facter.nixosModules.facter
           # ./hardware-facter.nix
@@ -24,7 +24,7 @@
             hardware.facter.reportPath = ./facter.json;
           }
 
-          ./configuration.nix
+          ./cooked/configuration.nix
         ];
         # specialArgs = { inherit inputs; };
       };
