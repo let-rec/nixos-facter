@@ -21,7 +21,7 @@
           # nixos-facter.nixosModules.facter
           # ./hardware-facter.nix
           {
-            hardware.facter.reportPath = ./facter.json;
+            hardware.facter.reportPath = ./cooked/facter.json;
           }
 
           ./cooked/configuration.nix
